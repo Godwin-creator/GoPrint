@@ -262,7 +262,7 @@ Après validation sur les pages de test, tester sur des sites réels :
 
 ## 7. Critères d'Acceptation
 
-### Critères Obligatoires ✅
+### Critères Obligatoires 
 
 - [x] Tous les sélecteurs CSS s'exécutent sans erreur
 - [x] Navigation supprimée sur toutes les pages de test
@@ -294,7 +294,7 @@ Testeur : [Nom]
 URL/Page : [doc-simple.html ou URL réelle]
 Navigateur : [Chrome/Edge/Brave] Version [X.X.X]
 
-Résultat : ✅ PASSÉ / ❌ ÉCHOUÉ
+Résultat :  PASSÉ /  ÉCHOUÉ
 
 Observation :
 [Décrire ce qui s'est passé]

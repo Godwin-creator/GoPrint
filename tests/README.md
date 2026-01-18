@@ -38,20 +38,20 @@ python -m http.server
 ```
 
 **Éléments à supprimer :**
-- ✂️ Barre de navigation
-- ✂️ Header gradient
-- ✂️ Footer
-- ✂️ Barre latérale grise
-- ✂️ Publicités
-- ✂️ Bannière cookies
-- ✂️ Boutons de partage
+-  Barre de navigation
+-  Header gradient
+-  Footer
+-  Barre latérale grise
+-  Publicités
+-  Bannière cookies
+-  Boutons de partage
 
 **Éléments à conserver :**
-- ✅ Contenu texte
-- ✅ Titres (H2, H3)
-- ✅ Blocs de code
-- ✅ Listes
-- ✅ Liens avec URLs
+-  Contenu texte
+-  Titres (H2, H3)
+-  Blocs de code
+-  Listes
+-  Liens avec URLs
 
 ### 2. `doc-complex.html`
 
@@ -77,25 +77,25 @@ file:///C:/Users/EDOHB/Cloud MEGA/Documents/GoPrint/tests/test-pages/doc-complex
 ```
 
 **Éléments à supprimer :**
-- ✂️ Navigation sticky
-- ✂️ Header avec gradient
-- ✂️ Aside/Barre latérale
-- ✂️ Publicités multiples
-- ✂️ Bannière cookies
-- ✂️ Formulaire newsletter
-- ✂️ Section commentaires
-- ✂️ Footer
-- ✂️ Tous les boutons
+-  Navigation sticky
+-  Header avec gradient
+-  Aside/Barre latérale
+-  Publicités multiples
+-  Bannière cookies
+-  Formulaire newsletter
+-  Section commentaires
+-  Footer
+-  Tous les boutons
 
 **Éléments à conserver :**
-- ✅ Titres et sections
-- ✅ Tables
-- ✅ Grilles de contenu
-- ✅ Texte et paragraphes
-- ✅ Blocs de code
-- ✅ Alerts/Messages
-- ✅ Liens avec URLs
-- ✅ Images
+-  Titres et sections
+-  Tables
+-  Grilles de contenu
+-  Texte et paragraphes
+-  Blocs de code
+-  Alerts/Messages
+-  Liens avec URLs
+-  Images
 
 ## Plan de Tests
 
@@ -239,4 +239,4 @@ Pour ajouter une nouvelle page de test :
 
 **Version :** 1.0.0  
 **Dernière mise à jour :** 18 janvier 2026  
-**Statut :** ✅ Actif
+**Statut :**  Actif

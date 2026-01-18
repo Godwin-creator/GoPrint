@@ -1,14 +1,14 @@
-# 🚀 Guide d'Action Rapide - GoPrint v1.0.0
+#  Guide d'Action Rapide - GoPrint v1.0.0
 
-## 📌 Vous êtes ici
+##  Vous êtes ici
 
-Toute la session de modularisation et test est **complétée** ✅
+Toute la session de modularisation et test est **complétée** 
 
 ---
 
-## 🎯 Prochaines Actions Recommandées
+##  Prochaines Actions Recommandées
 
-### 🔴 Immédiat (Aujourd'hui)
+###  Immédiat (Aujourd'hui)
 
 #### Option 1 : Tester l'Extension
 ```bash
@@ -21,10 +21,10 @@ Toute la session de modularisation et test est **complétée** ✅
 1. Ouvrir : file:///C:/.../GoPrint/tests/test-pages/doc-simple.html
 2. Cliquer icône GoPrint (verte dans la barre d'outils)
 3. Vérifier dans l'aperçu d'impression que :
-   - Navigation disparaît ✅
-   - Header disparaît ✅
-   - Publicités disparaissent ✅
-   - Contenu texte reste ✅
+   - Navigation disparaît 
+   - Header disparaît 
+   - Publicités disparaissent 
+   - Contenu texte reste 
    
 # Étape 3 : Tester page complexe
 1. Ouvrir : file:///C:/.../GoPrint/tests/test-pages/doc-complex.html
@@ -82,7 +82,7 @@ Toute la session de modularisation et test est **complétée** ✅
 
 ---
 
-### 🟡 Court Terme (Cette Semaine)
+###  Court Terme (Cette Semaine)
 
 #### Test Complet
 ```bash
@@ -93,7 +93,7 @@ Toute la session de modularisation et test est **complétée** ✅
 
 Format simple :
 - Test #X : [NOM]
-- Résultat : ✅ PASSÉ / ❌ ÉCHOUÉ
+- Résultat :  PASSÉ /  ÉCHOUÉ
 - Notes : [Observations]
 ```
 
@@ -119,7 +119,7 @@ Si vous trouvez un bug :
 
 ---
 
-### 🟢 Moyen Terme (Ce Mois)
+###  Moyen Terme (Ce Mois)
 
 #### Améliorations
 ```bash
@@ -141,7 +141,7 @@ Consulter DEVELOPMENT.md → "Ajouter une nouvelle catégorie"
 
 ---
 
-## 📚 Documents à Consulter
+##  Documents à Consulter
 
 ### Pour Démarrer Rapidement
 | Besoin | Document | Temps |
@@ -166,7 +166,7 @@ Consulter DEVELOPMENT.md → "Ajouter une nouvelle catégorie"
 
 ---
 
-## 🔑 Commandes Utiles
+##  Commandes Utiles
 
 ### Charger l'Extension
 ```
@@ -206,7 +206,7 @@ git diff HEAD~3 HEAD        # Voir changements des 3 derniers commits
 
 ---
 
-## ✨ Fichiers Clés à Connaître
+##  Fichiers Clés à Connaître
 
 ```
 UTILISER CES FICHIERS POUR...
@@ -242,7 +242,7 @@ tests/manual-test-plan.md
 
 ---
 
-## 🎓 Apprentissage Rapide
+##  Apprentissage Rapide
 
 ### Architecture en 5 Étapes
 
@@ -284,7 +284,7 @@ cleanAndPrint() {
 
 ---
 
-## 🐛 Troubleshooting Rapide
+##  Troubleshooting Rapide
 
 ### Problème : "Rien ne se passe"
 ```
@@ -313,7 +313,7 @@ cleanAndPrint() {
 
 ---
 
-## 📊 Checklist Avant de Continuer
+##  Checklist Avant de Continuer
 
 - [ ] J'ai lu STATUS.md
 - [ ] J'ai lu DEVELOPMENT.md OU tests/README.md
@@ -325,7 +325,7 @@ cleanAndPrint() {
 
 ---
 
-## 🎯 Prochain Milestone
+##  Prochain Milestone
 
 **Objectif :** Tester sur 5 sites réels + documenter
 
@@ -343,7 +343,7 @@ cleanAndPrint() {
 
 ---
 
-## 📞 Besoin d'Aide ?
+##  Besoin d'Aide ?
 
 1. **Pour questions techniques** → Lire DEVELOPMENT.md
 2. **Pour questions de test** → Lire tests/README.md ou manual-test-plan.md
@@ -352,22 +352,22 @@ cleanAndPrint() {
 
 ---
 
-## 🚀 Go ! 
+##  Go ! 
 
 Vous êtes prêt.e à :
 
-1. ✅ Tester l'extension
-2. ✅ Développer de nouvelles features
-3. ✅ Déboguer les problèmes
-4. ✅ Itérer sur le feedback
+1.  Tester l'extension
+2.  Développer de nouvelles features
+3.  Déboguer les problèmes
+4.  Itérer sur le feedback
 
 **Commencez par :** [Charger l'extension](#charger-lextension) et tester sur `doc-simple.html`
 
-Bonne chance ! 🎉
+Bonne chance ! 
 
 ---
 
 **Généré :** 18 janvier 2026  
 **Version :** 1.0.0  
-**Statut :** ✅ Prêt pour action
+**Statut :**  Prêt pour action
 

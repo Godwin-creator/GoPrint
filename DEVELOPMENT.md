@@ -1,6 +1,6 @@
 # Guide de Développement - GoPrint
 
-## 📋 Table des Matières
+##  Table des Matières
 
 1. [Setup Initial](#setup-initial)
 2. [Architecture](#architecture)
@@ -344,22 +344,22 @@ async function cleanAndPrint() {
 ### 1. Nommage Clair
 
 ```javascript
-// ✅ BON
+//  BON
 const removeUnwantedElements = () => { ... }
 
-// ❌ MAUVAIS
+//  MAUVAIS
 const clean = () => { ... }
 ```
 
 ### 2. Commentaires Explicatifs
 
 ```javascript
-// ✅ BON - Explique POURQUOI
+//  BON - Explique POURQUOI
 // Attendre 300ms pour que le navigateur stabilise le DOM
 // après la suppression des éléments
 await delayByTiming(TIMING.BEFORE_PRINT);
 
-// ❌ MAUVAIS - Explique seulement QUOI (évident du code)
+//  MAUVAIS - Explique seulement QUOI (évident du code)
 // Attendre 300 millisecondes
 setTimeout(() => {}, 300);
 ```
@@ -367,11 +367,11 @@ setTimeout(() => {}, 300);
 ### 3. Modularité
 
 ```javascript
-// ✅ BON - Fonctions petites et réutilisables
+//  BON - Fonctions petites et réutilisables
 export function cleanDOM() { ... }
 export function cleanCategory(category) { ... }
 
-// ❌ MAUVAIS - Tout dans une seule fonction
+//  MAUVAIS - Tout dans une seule fonction
 function doEverything() {
   // 500 lignes de code
 }
@@ -380,7 +380,7 @@ function doEverything() {
 ### 4. Gestion d'Erreurs
 
 ```javascript
-// ✅ BON
+//  BON
 try {
   const elements = document.querySelectorAll(selector);
   elements.forEach(el => el.remove());
@@ -388,7 +388,7 @@ try {
   console.warn(`[GoPrint] Sélecteur invalide: "${selector}"`, error.message);
 }
 
-// ❌ MAUVAIS - Pas de gestion d'erreur
+//  MAUVAIS - Pas de gestion d'erreur
 const elements = document.querySelectorAll(selector);
 elements.forEach(el => el.remove());
 ```
@@ -396,7 +396,7 @@ elements.forEach(el => el.remove());
 ### 5. Documentation JSDoc
 
 ```javascript
-// ✅ BON
+//  BON
 /**
  * Formate une URL pour affichage
  * 
@@ -405,7 +405,7 @@ elements.forEach(el => el.remove());
  */
 export function formatURL(url) { ... }
 
-// ❌ MAUVAIS
+//  MAUVAIS
 function f(u) { ... }
 ```
 
@@ -413,24 +413,24 @@ function f(u) { ... }
 
 ```bash
 # Avant de pusher, vérifier :
-✅ Extension se charge sans erreur
-✅ Logs GoPrint corrects en console
-✅ Pas d'erreur JavaScript
-✅ Doc-simple.html se nettoie correctement
-✅ Doc-complex.html se nettoie correctement
-✅ PDF généré correctement
+ Extension se charge sans erreur
+ Logs GoPrint corrects en console
+ Pas d'erreur JavaScript
+ Doc-simple.html se nettoie correctement
+ Doc-complex.html se nettoie correctement
+ PDF généré correctement
 ```
 
 ### 7. Messages de Commit Clairs
 
 ```bash
-# ✅ BON
+#  BON
 git commit -m "feat: ajouter support des widgets
 - Ajouter sélecteur .widget à SELECTORS
 - Mettre à jour tests manuels
 - Ajouter widgets à doc-complex.html"
 
-# ❌ MAUVAIS
+#  MAUVAIS
 git commit -m "fix stuff"
 ```
 
@@ -476,7 +476,7 @@ git commit -m "fix stuff"
 
 ---
 
-**Merci pour vos contributions à GoPrint ! 🚀**
+**Merci pour vos contributions à GoPrint ! **
 
 ---
 
