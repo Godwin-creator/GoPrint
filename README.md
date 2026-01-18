@@ -122,4 +122,4 @@ Merci à tous les étudiants et développeurs qui ont testé les versions préli
 Développé avec ❤️ pour la communauté des développeurs africains
 
 **Version actuelle :** 1.0.0  
-**Dernière mise à jour :** Janvier 2026
+**Dernière mise à jour :** Janvier 2026# GoPrint
