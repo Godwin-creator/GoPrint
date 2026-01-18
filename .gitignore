@@ -1,0 +1,60 @@
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE settings
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+*.zip
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Browser extensions testing
+chrome-extension-test/
+test-results/
+
+# Documentation
+*.docx
+*.pdf
+*.pptx
+
+# Misc
+*.bak
+*.backup
+.cache/

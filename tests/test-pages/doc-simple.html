@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Simple - GoPrint Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2c3e50;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Main content */
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dotted #667eea;
+        }
+
+        a:hover {
+            color: #764ba2;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 2rem 0;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .sidebar h4 {
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Advertisements */
+        .ad-banner {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            text-align: center;
+            color: #856404;
+        }
+
+        .ads {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Cookie banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .cookie-banner button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+
+        /* Share buttons */
+        .share-buttons {
+            background: #f0f0f0;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .share-buttons button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Blockquote */
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #555;
+            font-style: italic;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Alert box */
+        .alert {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation à supprimer -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#contenu">Contenu</a></li>
+            <li><a href="#exemples">Exemples</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header à supprimer -->
+    <header>
+        <h1>Guide Simple de GoPrint</h1>
+        <p>Page de test pour valider le nettoyage</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <h2 id="introduction">Introduction</h2>
+        <p>
+            GoPrint est une extension navigateur qui optimise les pages web avant l'impression. 
+            Cette page de test simple contient divers éléments que GoPrint doit supprimer lors du nettoyage.
+        </p>
+
+        <div class="alert alert-info">
+            <strong>Info :</strong> Cette boîte d'info doit être conservée (test optionnel)
+        </div>
+
+        <!-- Bannière de cookies à supprimer -->
+        <div class="ads">
+            <p>🎯 <strong>Publicité 1 :</strong> Achetez nos produits maintenant ! (À supprimer)</p>
+        </div>
+
+        <h2 id="contenu">Contenu Principal</h2>
+
+        <h3>Section 1 : Informatique de Base</h3>
+        <p>
+            L'informatique est la science qui traite du traitement automatique des données. 
+            Elle s'appuie sur des concepts fondamentaux comme les <code>variables</code>, 
+            les <code>fonctions</code> et les <code>structures de données</code>.
+        </p>
+
+        <blockquote>
+            "La programmation est un art et une science. C'est un art parce qu'il exige de la créativité, 
+            et une science parce qu'il suit des principes rigoureux." - Source inconnue
+        </blockquote>
+
+        <h3>Exemple de Code</h3>
+        <p>Voici un exemple simple en JavaScript :</p>
+        <pre><code>function bonjour(nom) {
+  console.log(`Bonjour, ${nom}!`);
+  return `Message envoyé à ${nom}`;
+}
+
+const resultat = bonjour('GoPrint');
+console.log(resultat);</code></pre>
+
+        <!-- Barre latérale à supprimer -->
+        <div class="sidebar">
+            <h4>Barre Latérale</h4>
+            <p>Cette barre latérale contient du contenu secondaire qui doit être supprimé lors de l'impression.</p>
+            <p>Elle polluent généralement les documents imprimés.</p>
+        </div>
+
+        <h3>Concepts Clés</h3>
+        <ul>
+            <li><strong>Variables :</strong> Conteneurs pour stocker les données</li>
+            <li><strong>Fonctions :</strong> Blocs de code réutilisables</li>
+            <li><strong>Boucles :</strong> Répétion d'opérations</li>
+            <li><strong>Conditions :</strong> Contrôle du flux d'exécution</li>
+        </ul>
+
+        <h2 id="exemples">Ressources et Liens</h2>
+        <p>
+            Voici quelques liens utiles pour en savoir plus :
+        </p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/fr/">MDN Web Docs</a> - Documentation web complète</li>
+            <li><a href="https://github.com/Godwin-creator/GoPrint">GitHub GoPrint</a> - Code source du projet</li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a> - Tutoriels web interactifs</li>
+        </ul>
+
+        <!-- Boutons de partage à supprimer -->
+        <div class="share-buttons">
+            <button>📱 Partager sur Twitter</button>
+            <button>📘 Partager sur Facebook</button>
+            <button>💼 Partager sur LinkedIn</button>
+        </div>
+
+        <!-- Publicité 2 à supprimer -->
+        <div class="ad-banner">
+            <p><strong>Publicité 2 :</strong> Économisez 50% sur notre service premium ! (À supprimer)</p>
+        </div>
+
+        <h3>Points Importants à Retenir</h3>
+        <div class="alert alert-warning">
+            <strong>⚠️ Attention :</strong> Cette boîte d'alerte peut être conservée ou supprimée selon la configuration
+        </div>
+
+        <p>
+            N'oubliez pas que la programmation est un processus itératif. Il faut tester constamment 
+            et déboguer pour obtenir de bons résultats. Utilisez des outils comme GoPrint pour faciliter 
+            votre flux de travail de documentation.
+        </p>
+
+        <h3>Conclusion</h3>
+        <p>
+            Cette page simple démontre comment GoPrint peut nettoyer une page web pour la rendre 
+            prête à l'impression. Des éléments comme la navigation, le header, la barre latérale, 
+            les publicités et les boutons de partage devraient être supprimés automatiquement.
+        </p>
+    </main>
+
+    <!-- Footer à supprimer -->
+    <footer>
+        <p>&copy; 2026 GoPrint - Extension de nettoyage intelligent pour l'impression</p>
+        <p>Développé par <a href="https://github.com/Godwin-creator" style="color: #667eea;">Godwin EDOH</a></p>
+    </footer>
+
+    <!-- Bannière de cookies à supprimer -->
+    <div class="cookie-banner">
+        <span>🍪 Ce site utilise des cookies pour améliorer votre expérience (À supprimer)</span>
+        <button>Accepter</button>
+        <button>Refuser</button>
+    </div>
+</body>
+</html>

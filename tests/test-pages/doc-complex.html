@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complexe avec Multimedia - GoPrint Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #fafafa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation sticky */
+        nav {
+            background: #2c3e50;
+            padding: 0.8rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        /* Main container */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.7rem;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Sidebar */
+        aside {
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border-left: 4px solid #e74c3c;
+            border-radius: 5px;
+            margin: 2rem 0;
+        }
+
+        aside h4 {
+            color: #e74c3c;
+            margin-bottom: 0.8rem;
+        }
+
+        aside ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        aside li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        aside li:last-child {
+            border-bottom: none;
+        }
+
+        /* Code and pre */
+        code {
+            background: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1.2rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-left: 4px solid #667eea;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        /* Links */
+        a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dotted #667eea;
+            transition: all 0.3s;
+        }
+
+        a:hover {
+            color: #764ba2;
+            border-bottom: 1px solid #764ba2;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Blockquote */
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: #666;
+            font-style: italic;
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        /* Alerts */
+        .alert {
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+            border-left: 4px solid;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border-color: #bee5eb;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            color: #856404;
+            border-color: #ffeaa7;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border-color: #c3e6cb;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        table th {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        table tr:hover {
+            background: #f5f5f5;
+        }
+
+        /* Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid #ecf0f1;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* Advertisements (should be removed) */
+        .ad-container {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+            border: 2px dashed #ffc107;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .ads {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        [class*="ad-"], [id*="ad-"] {
+            background: #fff9e6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        /* Share buttons (should be removed) */
+        .share-buttons {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .share-buttons button {
+            padding: 0.7rem 1.5rem;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .share-buttons button:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        /* Newsletter form (should be removed) */
+        .newsletter {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .newsletter h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .newsletter input {
+            padding: 0.7rem 1rem;
+            border: none;
+            border-radius: 3px;
+            width: 250px;
+            margin-top: 0.5rem;
+        }
+
+        .newsletter button {
+            padding: 0.7rem 1.5rem;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 3px;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Cookie banner (should be removed) */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cookie-banner button {
+            padding: 0.5rem 1rem;
+            margin-left: 1rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .cookie-banner .accept {
+            background: #27ae60;
+            color: white;
+        }
+
+        .cookie-banner .reject {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #667eea;
+            border-color: #667eea;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* Comments section (should be removed) */
+        .comments {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 5px;
+            margin: 2rem 0;
+            border: 1px solid #ecf0f1;
+        }
+
+        .comment {
+            background: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 3px solid #667eea;
+            border-radius: 3px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .comment-date {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        /* Print media query */
+        @media print {
+            nav, header, footer, .cookie-banner, .ads, .ad-container, 
+            .share-buttons, .newsletter, .comments, [class*="ad-"], 
+            [id*="ad-"], aside {
+                display: none !important;
+            }
+
+            main {
+                padding: 0;
+            }
+
+            section {
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+
+            pre, blockquote {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (should be removed) -->
+    <header>
+        <h1>Guide Complet de GoPrint</h1>
+        <p class="subtitle">Page de test complexe avec éléments multimedia et divers contenus</p>
+    </header>
+
+    <!-- Navigation (should be removed) -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#concepts">Concepts</a></li>
+            <li><a href="#exemples">Exemples</a></li>
+            <li><a href="#ressources">Ressources</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Section 1 -->
+        <section id="introduction">
+            <h2>Introduction à GoPrint</h2>
+            <p>
+                GoPrint est une extension navigateur sophistiquée conçue pour optimiser l'impression web. 
+                Elle utilise une architecture modulaire et des sélecteurs CSS centralisés pour nettoyer les 
+                pages avant l'impression.
+            </p>
+
+            <!-- Ad (should be removed) -->
+            <div class="ad-container">
+                <strong>Publicité :</strong> Améliorez votre productivité avec nos outils premium ! 
+                <a href="#">Cliquez ici pour en savoir plus</a>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>💡 Info :</strong> Cette page de test contient de nombreux éléments que GoPrint 
+                doit identifier et supprimer lors du nettoyage.
+            </div>
+
+            <!-- Sidebar (should be removed) -->
+            <aside>
+                <h4>📌 Points Importants</h4>
+                <ul>
+                    <li>Nettoyage automatique des pages</li>
+                    <li>Support des modules ES6</li>
+                    <li>Configuration centralisée</li>
+                    <li>Optimisation pour l'impression</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="concepts">
+            <h2>Concepts Fondamentaux</h2>
+
+            <h3>Architecture Modulaire</h3>
+            <p>
+                GoPrint utilise une architecture modulaire qui sépare les responsabilités en plusieurs fichiers :
+            </p>
+
+            <ul>
+                <li><code>config/constants.js</code> - Constantes de configuration</li>
+                <li><code>config/selectors.js</code> - Sélecteurs CSS centralisés</li>
+                <li><code>utils/dom-cleaner.js</code> - Fonction de nettoyage du DOM</li>
+                <li><code>utils/link-formatter.js</code> - Formatage des liens</li>
+                <li><code>content/cleaner.js</code> - Script d'injection dans la page</li>
+            </ul>
+
+            <h3>Exemple de Configuration</h3>
+            <p>Voici comment les sélecteurs sont organisés :</p>
+            <pre><code>const SELECTORS = {
+  structure: ['nav', 'header', 'footer', 'aside'],
+  advertising: ['.ad', '.ads', '[class*="ad-"]'],
+  cookies: ['.cookie-banner', '.cookie-notice'],
+  interactions: ['form', 'button', '.modal']
+};</code></pre>
+
+            <!-- Ads -->
+            <div class="ads">
+                <p>🎯 Annonce : Découvrez notre nouvelle version premium !</p>
+            </div>
+
+            <h3>Avantages de cette Approche</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Avantage</th>
+                        <th>Bénéfice</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modularité</td>
+                        <td>Code réutilisable</td>
+                        <td>Maintenance facile</td>
+                    </tr>
+                    <tr>
+                        <td>Configuration centralisée</td>
+                        <td>Modifications simples</td>
+                        <td>Moins d'erreurs</td>
+                    </tr>
+                    <tr>
+                        <td>Séparation des responsabilités</td>
+                        <td>Code lisible</td>
+                        <td>Développement rapide</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="exemples">
+            <h2>Exemples d'Utilisation</h2>
+
+            <h3>Cas d'Usage 1 : Nettoyage Complet</h3>
+            <p>
+                Lorsque vous cliquez sur l'icône de GoPrint, toutes les catégories de sélecteurs 
+                sont appliquées pour un nettoyage complet de la page.
+            </p>
+
+            <blockquote>
+                "Un code bien organisé est un code qui se maintient de lui-même." 
+                - Proverbe des développeurs
+            </blockquote>
+
+            <h3>Cas d'Usage 2 : Nettoyage Sélectif</h3>
+            <p>
+                Dans les versions futures, les utilisateurs pourront choisir quelles catégories nettoyer 
+                selon leurs besoins spécifiques.
+            </p>
+
+            <!-- Share buttons (should be removed) -->
+            <div class="share-buttons">
+                <button>📱 Twitter</button>
+                <button>📘 Facebook</button>
+                <button>💼 LinkedIn</button>
+                <button>✉️ Email</button>
+            </div>
+
+            <h3>Code Avancé</h3>
+            <p>Voici un exemple plus complexe avec gestion d'erreurs :</p>
+            <pre><code>export function cleanDOM() {
+  const selectors = getAllSelectors();
+  let removedCount = 0;
+
+  selectors.forEach(selector => {
+    try {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach(element => {
+        element.remove();
+        removedCount++;
+      });
+    } catch (error) {
+      console.warn(`Sélecteur invalide: "${selector}"`);
+    }
+  });
+
+  return removedCount;
+}</code></pre>
+
+            <h3>Statistiques de Test</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>📊 Éléments Testés</h4>
+                    <p>Cette page contient plus de 20 éléments différents pour tester le nettoyage.</p>
+                </div>
+                <div class="card">
+                    <h4>✅ Validation</h4>
+                    <p>Tous les sélecteurs CSS doivent fonctionner correctement sur cette page.</p>
+                </div>
+                <div class="card">
+                    <h4>🔍 Couverture</h4>
+                    <p>Les tests couvrent les cas simples et complexes de sélecteurs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="ressources">
+            <h2>Ressources Externes</h2>
+
+            <p>Découvrez des ressources utiles pour approfondir vos connaissances :</p>
+
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Selectors">
+                        Sélecteurs CSS sur MDN
+                    </a> - Documentation complète des sélecteurs CSS
+                </li>
+                <li>
+                    <a href="https://github.com/Godwin-creator/GoPrint">
+                        Dépôt GitHub GoPrint
+                    </a> - Code source et documentation du projet
+                </li>
+                <li>
+                    <a href="https://www.w3.org/TR/selectors-4/">
+                        Spécification Selectors Level 4
+                    </a> - Standard W3C officiel
+                </li>
+            </ul>
+
+            <!-- Newsletter form (should be removed) -->
+            <div class="newsletter">
+                <h3>📧 S'abonner à la Newsletter</h3>
+                <p>Recevez des mises à jour sur GoPrint directement dans votre boîte mail !</p>
+                <input type="email" placeholder="Votre adresse email...">
+                <button>S'abonner</button>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>⚠️ Attention :</strong> Vérifiez que tous les liens externes fonctionnent correctement 
+                après l'impression PDF.
+            </div>
+
+            <!-- Comments section (should be removed) -->
+            <div class="comments">
+                <h4>💬 Commentaires</h4>
+                <div class="comment">
+                    <div class="comment-author">Alice</div>
+                    <div class="comment-date">Il y a 2 jours</div>
+                    <p>Excellente explication ! Très utile pour comprendre l'architecture.</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-author">Bob</div>
+                    <div class="comment-date">Il y a 1 jour</div>
+                    <p>J'ai une question sur la gestion des erreurs dans les sélecteurs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+
+            <p>
+                GoPrint représente une approche moderne et efficace du nettoyage web avant l'impression. 
+                En utilisant une architecture modulaire et des configurations centralisées, il garantit 
+                une maintenance facile et une extensibilité future.
+            </p>
+
+            <div class="alert alert-success">
+                <strong>✅ Succès :</strong> Cette page de test valide correctement le fonctionnement 
+                de tous les composants de GoPrint !
+            </div>
+
+            <h3>Points à Retenir</h3>
+            <ol>
+                <li>L'architecture modulaire facilite la maintenance</li>
+                <li>Les configurations centralisées réduisent les erreurs</li>
+                <li>La séparation des responsabilités améliore la lisibilité</li>
+                <li>Les tests sont essentiels pour valider le bon fonctionnement</li>
+                <li>La documentation claire aide à l'onboarding des contributeurs</li>
+            </ol>
+
+            <p style="margin-top: 2rem; font-style: italic; color: #666;">
+                Merci d'avoir lu ce guide complet. Pour toute question ou suggestion, 
+                visitez le <a href="https://github.com/Godwin-creator/GoPrint">dépôt GitHub</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer (should be removed) -->
+    <footer>
+        <p>&copy; 2026 GoPrint - Extension de nettoyage intelligent pour l'impression</p>
+        <p>
+            Développé par <a href="https://github.com/Godwin-creator">Godwin EDOH</a>
+            | <a href="https://www.linkedin.com/in/komi-godwin-edoh-bedi-449166339">LinkedIn</a>
+        </p>
+        <p>
+            <strong>Version :</strong> 1.0.0 | <strong>Licence :</strong> MIT
+        </p>
+    </footer>
+
+    <!-- Cookie banner (should be removed) -->
+    <div class="cookie-banner">
+        <span>🍪 Ce site utilise des cookies. En continuant, vous acceptez notre politique (À supprimer)</span>
+        <button class="accept">Accepter tout</button>
+        <button class="reject">Personnaliser</button>
+    </div>
+</body>
+</html>
