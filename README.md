@@ -37,20 +37,27 @@ Un simple clic sur l'icône de l'extension déclenche immédiatement le processu
 
 ## Installation
 
-### Depuis le Code Source
+Pour des instructions détaillées d'installation avec captures d'écran, consultez le [Guide d'Installation Complet](INSTALLATION.md).
 
-Pour installer GoPrint à partir du code source, vous devez d'abord cloner le dépôt GitHub sur votre ordinateur. Ouvrez votre terminal et exécutez la commande suivante :
+### Installation Rapide
 
-```bash
-git clone https://github.com/Godwin-creator/GoPrint.git
-cd GoPrint
-```
+1. **Cloner le dépôt** :
+   ```bash
+   git clone https://github.com/Godwin-creator/GoPrint.git
+   cd GoPrint
+   ```
 
-Ensuite, ouvrez votre navigateur Chrome ou tout navigateur basé sur Chromium comme Edge ou Brave. Accédez à la page des extensions en tapant `chrome://extensions/` dans la barre d'adresse. Activez le mode développeur en cliquant sur le bouton situé en haut à droite de la page.
+2. **Ouvrir le navigateur** et aller à `chrome://extensions/`
 
-Cliquez sur le bouton "Charger l'extension non empaquetée" et sélectionnez le dossier GoPrint que vous venez de cloner. L'extension sera immédiatement installée et son icône apparaîtra dans la barre d'outils de votre navigateur.
+3. **Activer le Mode Développeur** (toggle en haut à droite)
 
-### Depuis le Chrome Web Store (à venir)
+4. **Cliquer** sur "Charger l'extension non empaquetée"
+
+5. **Sélectionner** le dossier GoPrint
+
+6. **Vérifier** que l'icône GoPrint apparaît dans la barre d'outils ✅
+
+### Installation Depuis le Chrome Web Store (à venir)
 
 Une fois le développement terminé et l'extension publiée, vous pourrez l'installer directement depuis le Chrome Web Store en un seul clic.
 

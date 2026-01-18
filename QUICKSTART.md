@@ -6,25 +6,29 @@ Toute la session de modularisation et test est **complétée**
 
 ---
 
-##  Prochaines Actions Recommandées
+## 🎯 Prochaines Actions Recommandées
 
-###  Immédiat (Aujourd'hui)
+### 🔴 Immédiat (Aujourd'hui)
 
 #### Option 1 : Tester l'Extension
+
+**Pour instructions détaillées avec captures d'écran, voir [INSTALLATION.md](INSTALLATION.md)**
+
 ```bash
 # Étape 1 : Charger l'extension
 1. Ouvrir chrome://extensions/
-2. Cliquer "Charger l'extension non empaquetée"
-3. Sélectionner dossier C:\...\GoPrint (le repo cloné, son adresse en local)
+2. Activer "Mode Développeur" (toggle en haut à droite)
+3. Cliquer "Charger l'extension non empaquetée"
+4. Sélectionner dossier C:\...\GoPrint (le repo cloné)
 
 # Étape 2 : Tester page simple
 1. Ouvrir : file:///C:/.../GoPrint/tests/test-pages/doc-simple.html
 2. Cliquer icône GoPrint (verte dans la barre d'outils)
 3. Vérifier dans l'aperçu d'impression que :
-   - Navigation disparaît 
-   - Header disparaît 
-   - Publicités disparaissent 
-   - Contenu texte reste 
+   - Navigation disparaît ✅
+   - Header disparaît ✅
+   - Publicités disparaissent ✅
+   - Contenu texte reste ✅
    
 # Étape 3 : Tester page complexe
 1. Ouvrir : file:///C:/.../GoPrint/tests/test-pages/doc-complex.html

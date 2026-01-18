@@ -30,10 +30,12 @@ cd GoPrint
 
 ### Charger l'Extension en Développement
 
+Pour des instructions détaillées avec captures d'écran, consultez le [Guide d'Installation Complet](INSTALLATION.md).
+
 1. Ouvrir `chrome://extensions/` (ou équivalent)
 2. Activer **Mode Développeur** (coin supérieur droit)
 3. Cliquer **Charger l'extension non empaquetée**
-4. Sélectionner le dossier `GoPrint`
+4. Sélectionner le dossier `GoPrint` (celui contenant `manifest.json`)
 
 ### Serveur Local (Optionnel)
 

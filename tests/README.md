@@ -107,9 +107,9 @@ Consulter [manual-test-plan.md](manual-test-plan.md) pour :
 
 ## Procédure de Test Rapide
 
-1. **Installer l'extension**
+1. **Installer l'extension** (consulter [INSTALLATION.md](../INSTALLATION.md) pour instructions détaillées avec captures d'écran)
    ```
-   chrome://extensions/ → Charger extension non empaquetée → Sélectionner GoPrint/
+   chrome://extensions/ → Mode Développeur ON → Charger extension non empaquetée → Sélectionner GoPrint/
    ```
 
 2. **Tester sur page simple**
