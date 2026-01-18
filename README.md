@@ -1,6 +1,9 @@
-# GoPrint - Extension Navigateur pour Impression Intelligente
+<div align="center">
 
-![Logo GoPrint](assets/logo.png)
+<img width="220" alt="Logo GoPrint" src="assets/logo.png" />
+
+# GoPrint - Extension Navigateur pour Impression Intelligente
+</div>
 
 ## À Propos du Projet
 
@@ -117,9 +120,28 @@ Pour toute question, suggestion ou demande de support, vous pouvez ouvrir une is
 
 Merci à tous les étudiants et développeurs qui ont testé les versions préliminaires de GoPrint et fourni des retours précieux. Votre contribution a permis d'améliorer considérablement la qualité de l'extension.
 
----
 
-Développé avec ❤️ pour la communauté des développeurs africains
+
+## Développeur
+
+<div align="center">
+
+### **Komi Godwin EDOH BEDI**
+
+*Étudiant en Génie Logiciel | École Polytechnique de Lomé*
+
+ Développeur Web Full-Stack en devenir   
+ Passionné par le developpement
+
+<br>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/komi-godwin-edoh-bedi-449166339)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Godwin-creator)
+
+
+</div>
+
+---
 
 **Version actuelle :** 1.0.0  
 **Dernière mise à jour :** Janvier 2026# GoPrint
