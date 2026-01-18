@@ -15,7 +15,7 @@ Toute la session de modularisation et test est **complétée** ✅
 # Étape 1 : Charger l'extension
 1. Ouvrir chrome://extensions/
 2. Cliquer "Charger l'extension non empaquetée"
-3. Sélectionner dossier C:\...\GoPrint (le repo cloner, son adresse en local)
+3. Sélectionner dossier C:\...\GoPrint (le repo cloné, son adresse en local)
 
 # Étape 2 : Tester page simple
 1. Ouvrir : file:///C:/.../GoPrint/tests/test-pages/doc-simple.html
