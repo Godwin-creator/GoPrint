@@ -15,10 +15,10 @@ Toute la session de modularisation et test est **complétée** ✅
 # Étape 1 : Charger l'extension
 1. Ouvrir chrome://extensions/
 2. Cliquer "Charger l'extension non empaquetée"
-3. Sélectionner dossier C:\Users\EDOHB\Cloud MEGA\Documents\GoPrint
+3. Sélectionner dossier C:\...\GoPrint (le repo cloner, son adresse en local)
 
 # Étape 2 : Tester page simple
-1. Ouvrir : file:///C:/Users/EDOHB/Cloud%20MEGA/Documents/GoPrint/tests/test-pages/doc-simple.html
+1. Ouvrir : file:///C:/.../GoPrint/tests/test-pages/doc-simple.html
 2. Cliquer icône GoPrint (verte dans la barre d'outils)
 3. Vérifier dans l'aperçu d'impression que :
    - Navigation disparaît ✅
@@ -27,7 +27,7 @@ Toute la session de modularisation et test est **complétée** ✅
    - Contenu texte reste ✅
    
 # Étape 3 : Tester page complexe
-1. Ouvrir : file:///C:/Users/EDOHB/Cloud%20MEGA/Documents/GoPrint/tests/test-pages/doc-complex.html
+1. Ouvrir : file:///C:/.../GoPrint/tests/test-pages/doc-complex.html
 2. Cliquer icône GoPrint
 3. Valider résultats similaires
 ```
@@ -190,7 +190,7 @@ F12 → Onglet Console → Chercher "[GoPrint]"
 ### Ouvrir une Page de Test
 ```
 Méthode 1 - Fichier local
-file:///C:/Users/EDOHB/Cloud%20MEGA/Documents/GoPrint/tests/test-pages/doc-simple.html
+file:///C:/.../GoPrint/tests/test-pages/doc-simple.html
 
 Méthode 2 - Serveur local (si Python installé)
 python -m http.server
@@ -370,3 +370,4 @@ Bonne chance ! 🎉
 **Généré :** 18 janvier 2026  
 **Version :** 1.0.0  
 **Statut :** ✅ Prêt pour action
+
