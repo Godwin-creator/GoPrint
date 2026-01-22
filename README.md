@@ -55,7 +55,7 @@ Pour des instructions détaillées d'installation avec captures d'écran, consul
 
 5. **Sélectionner** le dossier GoPrint
 
-6. **Vérifier** que l'icône GoPrint apparaît dans la barre d'outils ✅
+6. **Vérifier** que l'icône GoPrint apparaît dans la barre d'outils 
 
 ### Installation Depuis le Chrome Web Store (à venir)
 
