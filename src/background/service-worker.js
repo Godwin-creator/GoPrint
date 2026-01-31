@@ -1,13 +1,6 @@
 // Service Worker pour GoPrint
 // Ce fichier écoute les événements de l'extension et coordonne les actions
 
-/**
- * Événement déclenché lorsque l'utilisateur clique sur l'icône de l'extension
- * dans la barre d'outils du navigateur.
- * 
- * Le paramètre 'tab' contient toutes les informations sur l'onglet actif,
- * comme son ID, son URL, son titre, etc.
- */
 chrome.action.onClicked.addListener(async (tab) => {
   try {
     // Vérification de sécurité : on s'assure que l'onglet a bien un ID valide

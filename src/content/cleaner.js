@@ -1,21 +1,18 @@
-/**
- * cleaner.js - Script de nettoyage intelligent pour GoPrint
- * 
- * Ce script est injecté dans la page web et manipule le DOM pour créer
- * une version optimisée pour l'impression. Il importe les modules utilitaires
- * qui encapsulent la logique de nettoyage.
- * 
- * NOTE : Ce script utilise des imports dynamiques pour supporter Manifest V3.
- * Les modules sont chargés via importScripts() ou import() selon le contexte.
+/*
+  cleaner.js - Script de nettoyage intelligent pour GoPrint
+  Ce script est injecté dans la page web et manipule le DOM pour créer
+  une version optimisée pour l'impression. Il importe les modules utilitaires
+  qui encapsulent la logique de nettoyage.
+  NOTE : Ce script utilise des imports dynamiques pour supporter Manifest V3.
+  Les modules sont chargés via importScripts() ou import() selon le contexte.
  */
 
 (async function() {
   'use strict';
 
-  /**
-   * Charge dynamiquement le module de nettoyage du DOM
-   * 
-   * Retourne un objet avec les fonctions disponibles du module
+  /*
+    Charge dynamiquement le module de nettoyage du DOM 
+    Retourne un objet avec les fonctions disponibles du module
    */
   async function loadDomCleanerModule() {
     // Simulation du module dom-cleaner.js
@@ -53,8 +50,8 @@
     };
   }
 
-  /**
-   * Charge dynamiquement le module de formatage des liens
+  /*
+    Charge dynamiquement le module de formatage des liens
    */
   async function loadLinkFormatterModule() {
     return {
@@ -88,10 +85,9 @@
     };
   }
 
-  /**
-   * Applique les styles CSS pour l'impression
-   * 
-   * Ces styles sont basés sur la configuration PRINT_STYLES de constants.js
+  /*
+   Applique les styles CSS pour l'impression
+   Ces styles sont basés sur la configuration PRINT_STYLES de constants.js
    */
   function applyPrintStyles() {
     const styleElement = document.createElement('style');
@@ -143,8 +139,8 @@
     console.log('[GoPrint] Styles d\'impression appliqués');
   }
 
-  /**
-   * Fonction principale orchestrant le nettoyage
+  /*
+    Fonction principale orchestrant le nettoyage
    */
   async function cleanAndPrint() {
     try {

@@ -1,20 +1,18 @@
-/**
- * print-styles.css - Styles d'impression optimisés pour GoPrint
- * 
- * Ce fichier contient toutes les règles CSS qui contrôlent l'apparence
- * des pages lors de l'impression ou de l'export PDF.
- * 
- * Ces styles sont injectés dans la page AVANT le script de nettoyage
- * pour garantir qu'ils sont bien pris en compte par le navigateur.
+/*
+ print-styles.css - Styles d'impression optimisés pour GoPrint
+ Ce fichier contient toutes les règles CSS qui contrôlent l'apparence
+ des pages lors de l'impression ou de l'export PDF.
+ Ces styles sont injectés dans la page AVANT le script de nettoyage
+ pour garantir qu'ils sont bien pris en compte par le navigateur.
  */
 
 /* ========================================================================
    CONFIGURATION GLOBALE DE LA PAGE
    ======================================================================== */
 
-/**
- * La règle @page contrôle les propriétés physiques de la page imprimée
- * comme les marges, la taille du papier et l'orientation.
+/*
+ La règle @page contrôle les propriétés physiques de la page imprimée
+ comme les marges, la taille du papier et l'orientation.
  */
 @page {
   /* Marges uniformes sur tous les côtés */
@@ -30,9 +28,9 @@
 }
 
 /**
- * Tous les styles ci-dessous sont enveloppés dans @media print
- * pour qu'ils ne s'appliquent QUE lors de l'impression et n'affectent
- * pas l'affichage normal à l'écran.
+ Tous les styles ci-dessous sont enveloppés dans @media print
+ pour qu'ils ne s'appliquent QUE lors de l'impression et n'affectent
+ pas l'affichage normal à l'écran.
  */
 @media print {
 
@@ -41,16 +39,16 @@
      ======================================================================== */
 
   /**
-   * Réinitialisation globale pour s'assurer que tous les éléments
-   * utilisent le modèle de boîte border-box, ce qui facilite grandement
-   * les calculs de largeur et évite les débordements.
+   Réinitialisation globale pour s'assurer que tous les éléments
+   utilisent le modèle de boîte border-box, ce qui facilite grandement
+   les calculs de largeur et évite les débordements.
    */
   * {
     box-sizing: border-box !important;
   }
 
-  /**
-   * Configuration du corps du document pour une lisibilité optimale
+  /*
+   Configuration du corps du document pour une lisibilité optimale
    */
   body {
     /* Suppression de toute couleur de fond */
@@ -81,10 +79,10 @@
      CONTRÔLE DES SAUTS DE PAGE
      ======================================================================== */
 
-  /**
-   * Ces règles empêchent la coupure de certains éléments entre deux pages.
-   * La coupure d'un bloc de code ou d'une image au milieu rend le document
-   * difficile à lire et peu professionnel.
+  /*
+   Ces règles empêchent la coupure de certains éléments entre deux pages.
+   La coupure d'un bloc de code ou d'une image au milieu rend le document
+   difficile à lire et peu professionnel.
    */
 
   /* Blocs de code et citations : jamais coupés */
@@ -114,10 +112,10 @@
     break-inside: avoid !important;
   }
 
-  /**
-   * Les titres ne doivent jamais être séparés du contenu qui les suit.
-   * Un titre seul en bas de page sans son contenu crée une mise en page
-   * confuse et peu professionnelle.
+  /*
+   Les titres ne doivent jamais être séparés du contenu qui les suit.
+   Un titre seul en bas de page sans son contenu crée une mise en page
+   confuse et peu professionnelle.
    */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid !important;
@@ -126,8 +124,8 @@
     break-inside: avoid !important;
   }
 
-  /**
-   * Les listes doivent rester groupées avec leurs éléments parents
+  /*
+   Les listes doivent rester groupées avec leurs éléments parents
    */
   ul, ol, dl {
     page-break-before: avoid !important;
@@ -138,8 +136,8 @@
      OPTIMISATION DE LA TYPOGRAPHIE
      ======================================================================== */
 
-  /**
-   * Hiérarchie claire des titres pour une navigation facile dans le document
+  /*
+   Hiérarchie claire des titres pour une navigation facile dans le document
    */
   h1 {
     font-size: 24pt !important;
@@ -173,8 +171,8 @@
     color: #000 !important;
   }
 
-  /**
-   * Espacement optimal des paragraphes pour une lecture confortable
+  /*
+   Espacement optimal des paragraphes pour une lecture confortable
    */
   p {
     margin-top: 0 !important;
@@ -188,9 +186,9 @@
      MISE EN FORME DU CODE SOURCE
      ======================================================================== */
 
-  /**
-   * Les blocs de code nécessitent une attention particulière car ils sont
-   * au cœur de la documentation technique que GoPrint vise à optimiser.
+  /*
+   Les blocs de code nécessitent une attention particulière car ils sont
+   au cœur de la documentation technique que GoPrint vise à optimiser.
    */
 
   /* Blocs de code multi-lignes */
@@ -230,18 +228,18 @@
      LIENS HYPERTEXTES
      ======================================================================== */
 
-  /**
-   * Les liens doivent rester visibles et leur URL doit être accessible
-   * même sur un document papier.
+  /*
+   Les liens doivent rester visibles et leur URL doit être accessible
+   même sur un document papier.
    */
   a {
     color: #000 !important;
     text-decoration: underline !important;
   }
 
-  /**
-   * Affichage de l'URL complète après le texte du lien
-   * Cette règle est complétée par le formatage JavaScript dans cleaner.js
+  /*
+   Affichage de l'URL complète après le texte du lien
+   Cette règle est complétée par le formatage JavaScript dans cleaner.js
    */
   a[href^="http"]:after {
     content: " (" attr(href) ")" !important;
@@ -259,8 +257,8 @@
      TABLEAUX
      ======================================================================== */
 
-  /**
-   * Mise en forme des tableaux pour une lisibilité optimale
+  /*
+   Mise en forme des tableaux pour une lisibilité optimale
    */
   table {
     width: 100% !important;
@@ -310,10 +308,10 @@
      ÉLÉMENTS À MASQUER LORS DE L'IMPRESSION
      ======================================================================== */
 
-  /**
-   * Ces éléments sont soit déjà supprimés par cleaner.js, soit doivent
-   * être masqués pour garantir qu'ils n'apparaissent pas dans l'impression.
-   * Cette règle agit comme un filet de sécurité.
+  /*
+   Ces éléments sont soit déjà supprimés par cleaner.js, soit doivent
+   être masqués pour garantir qu'ils n'apparaissent pas dans l'impression.
+   Cette règle agit comme un filet de sécurité.
    */
   video,
   audio,
@@ -327,9 +325,9 @@
      OPTIMISATION DES COULEURS POUR L'ENCRE
      ======================================================================== */
 
-  /**
-   * Conversion des fonds de couleur en gris clair pour économiser l'encre
-   * tout en conservant la structure visuelle du document.
+  /*
+   Conversion des fonds de couleur en gris clair pour économiser l'encre
+   tout en conservant la structure visuelle du document.
    */
   *[style*="background-color"],
   *[style*="background:"] {
@@ -346,8 +344,8 @@
      IMAGES ET MÉDIAS
      ======================================================================== */
 
-  /**
-   * Optimisation des images pour l'impression
+  /*
+   Optimisation des images pour l'impression
    */
   img {
     max-width: 100% !important;
