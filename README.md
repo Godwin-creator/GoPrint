@@ -144,6 +144,8 @@ Merci à tous les étudiants et développeurs qui ont testé les versions préli
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/komi-godwin-edoh-bedi-449166339)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Godwin-creator)
+<br/>
+[![committers.top badge](https://user-badge.committers.top/togo/Godwin-creator.svg)](https://user-badge.committers.top/togo/Godwin-creator)
 
 
 </div>
@@ -152,3 +154,4 @@ Merci à tous les étudiants et développeurs qui ont testé les versions préli
 
 **Version actuelle :** 1.0.0  
 **Dernière mise à jour :** Janvier 2026# GoPrint
+
